@@ -1,0 +1,46 @@
+<form class="mt-10" #profile = "ngForm">
+    <h4 class="mb-5"> Profile Details </h4>
+    <span class="sub-text"> Enter your profie information </span>
+    <div class="mt-20 image-upload">
+        <div class="img-btn"> 
+            <button mat-raised-button style="color: #1E5EFF;"> Add File </button> 
+        </div>
+        <span> Or drag and drop files </span>
+    </div>
+    <section class="form-grid">
+        <div>
+            <label for="firstname">First Name</label><br>
+            <input type="text" name = 'firstname' ngModel> 
+        </div>
+        <div>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name = 'lastname' ngModel> 
+        </div>
+        <div>
+            <label for="email">Email Address</label><br>
+            <input type="email" name = 'email' ngModel> 
+        </div>
+        <div>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" name = 'phone' ngModel> 
+        </div>
+    </section> 
+    <mat-divider class="mt-20"></mat-divider>
+
+    <h4 class="mb-5"> Regional Settings </h4>
+    <span class="sub-text"> Set your language and timezone </span>
+    <section class="form-grid">
+        <div>
+            <label for="lang-select">Language</label><br>
+            <select name="languages" id="lang-select">
+                <option *ngFor="let lang of languages" value="lang.key"> {{ lang.value }} </option>
+            </select>
+        </div>
+        <div>
+            <label for="time-select">Timezone</label><br>
+            <select name="timezones" id="time-select">
+                <option *ngFor="let lang of timezones; let i = index;" value="i"> {{ lang }} </option>
+            </select>
+        </div>
+    </section> 
+</form>

@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <mat-nav-list class="nav-container">
+            <ng-container *ngFor="let item of menuItems">
+                <app-nav-item [path]="item.path" [name]="item.name" [icon]="item.icon" [notifications]="item.notifications"></app-nav-item>
+            </ng-container>
+
+            <div class="nav-group"> Other Information </div>
+            <ng-container *ngFor="let item of otherMenuItems">
+                <app-nav-item [path]="item.path" [name]="item.name" [icon]="item.icon" [notifications]="item.notifications"></app-nav-item>
+            </ng-container>
+
+            <div class="nav-group"> Settings </div>
+            <ng-container *ngFor="let item of settingMenuItems">
+                <app-nav-item [path]="item.path" [name]="item.name" [icon]="item.icon" [notifications]="item.notifications"></app-nav-item>
+            </ng-container>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

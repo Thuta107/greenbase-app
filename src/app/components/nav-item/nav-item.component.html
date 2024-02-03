@@ -1,0 +1,9 @@
+<a class="menu-container" mat-list-item routerLink="{{ path }}" (click)="route(path)">
+    <mat-icon class="font"> {{ icon }} </mat-icon>
+    <span class="font"> {{ name }} </span>
+    <span *ngIf="notifications > 0" class="badge" matBadgeSize="medium" 
+        matBadge="{{ notifications }}" matBadgeOverlap="true">
+    </span>
+</a>
+
+

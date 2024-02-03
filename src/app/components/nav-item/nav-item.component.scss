@@ -1,0 +1,35 @@
+a:hover {
+    background-color: #1E5EFF;
+}
+
+a:hover .font {
+    color: white;
+}
+
+a:focus {
+    background-color: #1E5EFF;
+}
+
+a:focus .font {
+    color: white;
+}
+
+.font {
+    color: #5A607F;
+    vertical-align: middle;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.badge {
+    top: 8px; 
+    left: 130px;
+    font-size: 13px;
+}
+
+a:hover + .my-custom-badge-accent.mat-badge-accent .mat-badge-content {
+    background-color: #1E5EFF;
+    color: white;
+}

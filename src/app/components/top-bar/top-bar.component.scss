@@ -1,0 +1,23 @@
+.space {
+    flex: 1 1 auto;
+}
+
+.avatar {
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px;
+}
+
+.icon {
+    color: gray;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.noti-badge {
+    top: -5px;
+    left: -5px;
+    font-size: 10px;
+}
